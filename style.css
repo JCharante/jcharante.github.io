@@ -130,6 +130,10 @@ a {
     max-width: 85%;
 }
 
+.no-spaced-out-paragraphs p {
+    margin-bottom: 0px; !important;
+}
+
 .space-out-paragraphs-20px p {
     margin-bottom: 20px;
 }
