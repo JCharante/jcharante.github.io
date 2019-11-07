@@ -36,7 +36,11 @@ body {
 }
 
 .full-height-140 {
-    height: 110%;
+    height: 140%;
+}
+
+.full-height-120 {
+    height: 120%;
 }
 
 .full-height-110 {
@@ -144,6 +148,14 @@ a {
 
 .space-out-paragraphs-20px h1 {
     margin-bottom: 20px;
+}
+
+.space-out-paragraphs-30px p {
+    margin-bottom: 30px;
+}
+
+.space-out-paragraphs-30px h1 {
+    margin-bottom: 30px;
 }
 
 .space-out-divs div {
