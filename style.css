@@ -43,6 +43,10 @@ body {
     height: 110%;
 }
 
+.full-height-100 {
+    height: 100%;
+}
+
 .full-height-90 {
     height: 90%;
 }
