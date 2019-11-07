@@ -131,7 +131,7 @@ a {
 }
 
 .no-spaced-out-paragraphs p {
-    margin-bottom: 0px; !important;
+    margin-bottom: 0px !important;
 }
 
 .space-out-paragraphs-20px p {
