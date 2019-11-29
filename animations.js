@@ -3,7 +3,7 @@ var j = 0;
 var speed = 80;
 
 var messages = [
-    ["Hello.", `I'm jyan.`],
+    ["Hello.", `I'm Jyan.`],
     ["Hola.", "Yo soy Jean Claude."],
     ["Saluton.", "Mi nomiĝas Johano."],
     ["Xin chào.", "Tôi tên là Rohn."],
