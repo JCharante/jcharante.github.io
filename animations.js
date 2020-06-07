@@ -6,8 +6,8 @@ var messages = [
     ["Hello.", `I'm Jyan.`],
     ["Hola.", "Yo soy Jean Claude."],
     ["Saluton.", "Mi nomiĝas Johano."],
-    ["Xin chào.", "Tôi tên là Rohn."],
-    ["你好！", "我叫张坚。"]
+    ["Xin chào.", "Tôi tên là Jon."],
+    ["大家好！", "我叫张坚。"]
 ]
 
 var phase = 0;
