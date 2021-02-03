@@ -1,0 +1,17 @@
+html {
+    background-color: #ffd;
+}
+
+#boundary-container {
+    max-width: 860px;
+    margin: auto;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}

@@ -1,0 +1,27 @@
+{% extends "blog/entry-template.html" %}
+
+{% block content %}
+<p>No one reads this, but if they did, they'd notice that this is under a new platform.</p>
+<p>Over the years I've had all sorts of personal sites, but for the past few years I haven't been able to keep a
+    blog online. I simply had become stuck on what tech stack to use. There's good old Wordpress (which I've never
+actually used), but I thought I'd save that for another project. I know some people use tools to convert their Markdown
+into blog pages, but what if I want to insert javascript or customize a specific page?
+    What if I want to insert a picture with a centered caption?
+</p><p>
+    I thought about storing
+blog entries as JSON and then using something like Gatsby to generate the page, building and throwing it into a
+nginx docker image and serving it, but I still didn't like the possibility of getting restricted on what I can do.
+Another restriction is that I didn't want to require a database. I'm tech literate (or at least I like to think I am) so
+I don't need a CMS. I don't need an admin panel just to modify my posts. I've experimented with using Quasar Framework's
+editor component to create a blog that stores content in MongoDB, but it's such a pain. For a solid year my blog was
+run on Quasar Framework, and it was smooth sailing but it just became painful to edit things. I've had an iteration
+where I just wrote the HTML but that seems like I'd easily get tired of things.</p>
+<p>Well I'm glad to announce that I found a happy middle-ground. This is better than a compromise actually. I've managed
+to make most things automated. For 95% of blog posts, I only need to create an html file, extend my template, and add
+    1 file to my app.py
+script that contains my Flask app. I don't need to learn a new framework when I don't require anything too complicated.
+And it actually feels nice. Using Flask and Jinja2 again reminds me of my childhood. That's a bit extreme but it reminds
+me of being a freshmen back in high school. And just like other recent projects, to update the site just requires
+running $ ./update.sh</p>
+<p></p>
+{% endblock %}

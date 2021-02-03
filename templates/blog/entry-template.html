@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#AC2B37">
+    <link rel="icon" sizes="192x192" href="https://static.jcharante.com/branding/fav.png">
+    <title>{% block title %} {{ blog_info.title }} {% endblock %} | JZ Blog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='blog/entry-template.css') }}" />
+</head>
+<body class="body">
+    <div id="boundary-container">
+        <h1>{{ blog_info.title }}</h1>
+        <p>by
+            {% block author %}
+            Jyan Zárate
+            {% endblock %}
+            on {{ blog_info.date.strftime('%A %B %d, %Y at %I:%M %p') }}
+        </p>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
