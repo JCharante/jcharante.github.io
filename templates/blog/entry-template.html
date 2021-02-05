@@ -17,9 +17,20 @@
             {% endblock %}
             on {{ blog_info.date.strftime('%A %B %d, %Y at %I:%M %p') }}
         </p>
-        <hr>
+        <br>
         {% block content %}
         {% endblock %}
+        <hr>
+        {% if blog_chain.next != None %}
+        <p>Next: <a href="/blog/{{ blog_chain.next.val.route }}">{{ blog_chain.next.val.title}}</a></p>
+        {% endif %}
+        {% if blog_chain.previous != None %}
+        <p>Previous: <a href="/blog/{{ blog_chain.previous.val.route }}">{{ blog_chain.previous.val.title}}</a></p>
+        {% endif %}
+        <p><a href="/blog">Back to Index.</a></p>
+        <p style="margin-top: 200px">
+        <p>Feedback can be directed towards blog@jcharante.com</p>
+        <p>Page generated on {{ now.strftime('%A %B %d, %Y at %I:%M %p') }}</p>
     </div>
 </body>
 </html>

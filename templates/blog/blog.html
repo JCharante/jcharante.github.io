@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <head>
-    <title>Jyan Zárate | Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#AC2B37">
+    <link rel="icon" sizes="192x192" href="https://static.jcharante.com/branding/fav.png">
+    <title>Blog Index | Jyan Zárate</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='blog/entry-template.css') }}" />
 </head>
 <body>
-    <p>WIP</p>
+    <div id="boundary-container">
+        <h1>Weblog Index</h1>
+        <hr>
+        <ul>
+        {% for blog_info in blog_index.get_all_blogs() %}
+            <li><a href="blog/{{ blog_info.route }}">{{ blog_info.title }}</a> | {{ blog_info.date.strftime('%b %d, %Y') }}</li>
+        {% endfor %}
+        </ul>
+        <hr>
+        <p>Feedback can be directed towards blog@jcharante.com</p>
+        <p>Page generated on {{ now.strftime('%A %B %d, %Y at %I:%M %p') }}</p>
+    </div>
 </body>
