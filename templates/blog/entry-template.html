@@ -4,8 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#AC2B37">
+
+    <meta property="og:site_name" content="Jyan Zárate's Web Log">
+
+    <meta property="og:title" content="Web log: {{ blog_info.title }}">
+
+    <meta property="og:description" content="A web log entry by Jyan Zárate.">
+
     <link rel="icon" sizes="192x192" href="https://static.jcharante.com/branding/fav.png">
-    <title>{% block title %} {{ blog_info.title }} {% endblock %} | JZ Blog</title>
+    <meta property="og:image" content="https://static.jcharante.com/branding/fav.png">
+
+    <meta name="twitter:image:alt" content="Personal Logo of JZ">
+
+    <meta name="twitter:card" content="summary">
+
+    <meta property="og:url" content="https://jyanz.com/blog/{{ blog_info.route }}">
+
+    <title>{% block title %} {{ blog_info.title }} {% endblock %} | JZ Weblog</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='blog/entry-template.css') }}" />
 </head>
 <body class="body">

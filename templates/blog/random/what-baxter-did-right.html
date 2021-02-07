@@ -1,6 +1,11 @@
 {% extends "blog/entry-template.html" %}
 
 {% block content %}
+
+<p>Soon after arriving at College, many alumni from Baxter Academy realized what they missed out by having a Baxter
+education. This is why I also wrote
+    <a href="/blog/what-baxter-did-wrong">{{ blog_index.get_blog_info('what-baxter-did-wrong').title }}</a>. However
+today I'd like to focus on what Baxter did right, which took some more time. </p>
 <p>This is a test page for testing the blog template</p>
 
 Portfolios. It reallly helped with being able to sell yourself.
@@ -9,5 +14,5 @@ Flex Friday. It helped me discover what I wanted to work on.
 
 Having teachers with experience in industry.
 
-<p>This post is written in contrast to <a href="/blog/what-baxter-did-wrong">{{ blog_index.get_blog_info('what-baxter-did-wrong').title }}</a></p>
+<p>This post is written in contrast to </p>
 {% endblock %}
