@@ -1,0 +1,21 @@
+{% extends "blog/entry-template.html" %}
+
+{% block content %}
+<p>I learned a lesson from Baemin the other day. If you don't know, it's a Korean food delivery company that bought
+out Vietnammm last year. I was signing up for their service, and like most other apps they have you sign up through a
+code sent out over SMS.</p>
+<div style="display: flex; justify-content: center">
+    <img src="{{ url_for('static', filename='blog/baemin/1.jpg') }}" height="500">
+</div>
+<p>So the interesting part is actually the text message</p>
+<div style="display: flex; justify-content: center">
+    <img src="{{ url_for('static', filename='blog/baemin/2.jpg') }}" height="500">
+</div>
+<p>Did you see it? They didn't pay to whitelabel their auth message. It's the standard Firebath auth text! It doesn't
+mention Baemin at all. Heck, it's not even in the localized language, it's in English! (I had set my UI to English earlier,
+but I doubt they i18n their auth codes unless Firebase made it really easy to do so)</p>
+<p>Imagine spending millions to roll out a huge advertising campaign, roll out new equipment / swag to your delivery
+partners, and buying out a competitor before you enter the market. And a critical part of the onboarding
+process for new users, is as barebones as this. But the lesson is that, it's okay. It doesn't need to be perfected.
+Surely it's working out for them. I guess I shouldn't worry about things like this in the future. </p>
+{% endblock %}

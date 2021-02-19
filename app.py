@@ -75,6 +75,11 @@ class BlogIndex:
 
 blog = BlogIndex()
 blog.register_blog(
+    BlogInfo('baemin-shipit',
+             'A lesson from Baemin: Just ship it',
+             datetime.datetime.strptime('2021-02-19 19:20', '%Y-%m-%d %H:%M'),
+             'random/baemin-just-ship-it.html'))
+blog.register_blog(
     BlogInfo('learn-word-clusters',
              'Learn Vocabulary through Clusters',
              datetime.datetime.strptime('2021-02-05 14:32', '%Y-%m-%d %H:%M'),
